@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
+import Chart from './Chart/Chart';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Menu from './Menu/Menu';
@@ -14,6 +14,7 @@ import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './LoginPage/LoginPage';
+
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           </Route>
           <Route path="/">
               <HomePage/>
+              <Chart/>
           </Route>
         </Switch>
       </div>
